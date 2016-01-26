@@ -48,6 +48,11 @@ header{
     }
 }
 
+h1{
+    text-align: center;
+    font-family: RobotoCondensed-BoldItalic;
+}
+
 .row{
     font-size: 4em;
     padding-top: 20%;
@@ -55,16 +60,15 @@ header{
     color: orangered;
 }
 
-/*
-#row{
- font-size: 4em;
-    padding-top: 20%;
-    font-family: IndieFlower;
-    color: orangered;   
+.small-up-1{
+ width: 100%;
+         max-width: none;
 }
-*/
 
-
+span{
+    font-size: 0.6em;
+    color: yellow;
+}
 
 
 
