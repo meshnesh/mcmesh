@@ -7,20 +7,21 @@
     position:fixed;
     z-index:-1;
     animation-name: test;
-    animation-duration: 15s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     opacity:0;
 }
 #img2 {
-    animation-delay:5s;
-    -webkit-animation-delay:5s
+    animation-delay:3s;
+    -webkit-animation-delay:3s
 }
 #img3 {
-    animation-delay:10s;
-    -webkit-animation-delay:10s
+    animation-delay:6s;
+    -webkit-animation-delay:6s
 }
 #img4 {
-    animation-delay:15s;
-    -webkit-animation-delay:15s
+    animation-delay:10s;
+    -webkit-animation-delay:10s
 }
 
 @-webkit-keyframes test {
