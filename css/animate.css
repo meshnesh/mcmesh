@@ -239,6 +239,7 @@
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes shake {
