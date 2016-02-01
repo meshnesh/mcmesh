@@ -159,12 +159,25 @@ span{
 
 
 
+
+
+
+
+
+
+
+
+
+.thumbnail{
+    border: none;
+    box-shadow: 0 0 0 0;
+}
+
 /*ice cream*/
 
 .image-wrapper {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+
+ 
   overflow: hidden;
   position: relative;
   text-align: center;
