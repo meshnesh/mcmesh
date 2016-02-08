@@ -152,12 +152,35 @@ p{
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s, -moz-transform 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
 }
+
+
+
+
+.cd-slider-navigation em::after {
+  /* tooltip arrow */
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -10px;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.7);
+}
 /*navigation*/
 
 /*button*/
 .no-touch .cd-slider > li .cd-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+
 .cd-slider > li .cd-btn {
   display: inline-block;
   padding: 1.2em 1.4em;
@@ -176,3 +199,82 @@ p{
 
 
 /*button*/
+
+
+
+.no-touch .cd-slider-navigation a:hover em {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s, -webkit-transform 0.2s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s, -moz-transform 0.2s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s, transform 0.2s 0s;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1170px) {
+  .cd-slider-navigation a {
+    height: 60px;
+    width: 60px;
+  }
+  .cd-slider-navigation li:first-of-type a {
+    /* change custom icon using image sprites */
+    background-position: 0 0px;
+  }
+  .cd-slider-navigation li.selected:first-of-type a {
+    /* change custom icon using image sprites */
+    background-position: 0 -60px;
+  }
+  .cd-slider-navigation li:nth-of-type(2) a {
+    background-position: -60px 0;
+  }
+  .cd-slider-navigation li.selected:nth-of-type(2) a {
+    background-position: -60px -60px;
+  }
+  .cd-slider-navigation li:nth-of-type(3) a {
+    background-position: -120px 0;
+  }
+  .cd-slider-navigation li.selected:nth-of-type(3) a {
+    background-position: -120px -60px;
+  }
+  .cd-slider-navigation li:nth-of-type(4) a {
+    background-position: -180px 0;
+  }
+  .cd-slider-navigation li.selected:nth-of-type(4) a {
+    background-position: -180px -60px;
+  }
+}
+
+/* -------------------------------- 
+
+svg cover layer
+
+-------------------------------- */
+.cd-svg-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.cd-svg-cover path {
+  fill: #ffe8c9;
+}
+.cd-svg-cover.is-animating {
+  z-index: 4;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
