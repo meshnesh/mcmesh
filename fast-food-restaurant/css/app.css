@@ -70,6 +70,10 @@ p{
     background: url(../img/background/Yummy-Fast-Food-Wallpapers-6.jpg);
     background-size: cover;
 }
+.visible4{
+    background: url(../img/background/354196-svetik.jpg);
+    background-size: cover;
+}
 /*ul slider1*/
 .cd-slider li{
     height: 100%;
