@@ -74,6 +74,11 @@ p{
     background: url(../img/background/354196-svetik.jpg);
     background-size: cover;
 }
+
+.visible5{
+    background: url(../img/background/Double-beef-burger.jpg);
+    background-size: cover;
+}
 /*ul slider1*/
 .cd-slider li{
     height: 100%;
