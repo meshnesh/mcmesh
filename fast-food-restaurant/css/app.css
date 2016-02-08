@@ -65,6 +65,11 @@ p{
     background: url(../img/background/fast-food-hero-02.jpg);
     background-size: cover;
 }
+
+.visible3{
+    background: url(../img/background/Yummy-Fast-Food-Wallpapers-6.jpg);
+    background-size: cover;
+}
 /*ul slider1*/
 .cd-slider li{
     height: 100%;
