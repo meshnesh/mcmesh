@@ -91,3 +91,71 @@ p{
   text-align: center;
   width: 90%;
 }
+
+.cd-slider-navigation li {
+  display: inline-block;
+  margin-right: 20px;
+/*
+     position: absolute;
+  bottom: 50px;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  text-align: center;
+  width: 90%;
+*/
+}
+
+.cd-slider-navigation li:last-of-type {
+  margin-right: 0;
+}
+
+
+.cd-slider-navigation::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+
+.cd-slider-navigation a {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background: url(../img/PNG/Food&Drink%2010) no-repeat -10px -10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+
+
+
+
+.cd-slider-navigation em {
+  /* tooltip visible on hover */
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  padding: 8px 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(3px);
+  -moz-transform: translateX(-50%) translateY(3px);
+  -ms-transform: translateX(-50%) translateY(3px);
+  -o-transform: translateX(-50%) translateY(3px);
+  transform: translateX(-50%) translateY(3px);
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s, -webkit-transform 0.2s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s, -moz-transform 0.2s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
+}
