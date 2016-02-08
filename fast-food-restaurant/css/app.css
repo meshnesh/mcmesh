@@ -1,0 +1,18 @@
+.cd-slider-wrapper{
+    height: 100%;
+    width: 100%;
+}
+.cd-slider{
+   
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.visible{
+    background: url(../img/background/buger.jpg);
+    background-size: cover;
+}
+.cd-slider li{
+    height: 100%;
+    width: 100%;
+    }
