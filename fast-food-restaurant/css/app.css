@@ -40,7 +40,7 @@ p{
 /*general*/
 
 
-
+/*section wrapper*/
 .cd-slider-wrapper{
     width: 100%;
     position: relative;
@@ -48,6 +48,8 @@ p{
   /* hide horizontal scrollbar on IE11 */
   overflow: hidden;
 }
+/*section wrapper*/
+/*ul slider1*/
 .cd-slider{
    
     height: 100%;
@@ -58,6 +60,8 @@ p{
     background: url(../img/background/buger.jpg);
     background-size: cover;
 }
+
+/*ul slider1*/
 .cd-slider li{
     height: 100%;
     width: 100%;
@@ -77,6 +81,8 @@ p{
   opacity: 1;
 }
 
+
+/*navigation*/
 .cd-slider-navigation {
   position: absolute;
   bottom: 50px;
@@ -115,7 +121,7 @@ p{
   position: relative;
   height: 40px;
   width: 40px;
-  background: url(../img/PNG/Food&Drink%2010) no-repeat -10px -10px;
+  background: url(../img/PNG/Food&Drink(59) no-repeat -10px -10px;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -146,3 +152,27 @@ p{
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s, -moz-transform 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
 }
+/*navigation*/
+
+/*button*/
+.no-touch .cd-slider > li .cd-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.cd-slider > li .cd-btn {
+  display: inline-block;
+  padding: 1.2em 1.4em;
+  margin-top: .8em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: .25em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+
+/*button*/
