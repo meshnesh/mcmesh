@@ -1,6 +1,52 @@
+/*general*/
+body{background-color: #fff;
+    font-family: RobotoCondensed-Italic;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+}
+a{
+    
+}
+
+h1{
+    
+}
+
+h2{
+    
+}
+
+h3{
+    
+}
+
+h4{
+    
+}
+
+h5{
+    
+}
+
+h6{
+    
+}
+
+p{
+    
+}
+
+/*general*/
+
+
+
 .cd-slider-wrapper{
-    height: 100%;
     width: 100%;
+    position: relative;
+  height: 95vh;
+  /* hide horizontal scrollbar on IE11 */
+  overflow: hidden;
 }
 .cd-slider{
    
